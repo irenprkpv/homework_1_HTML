@@ -56,11 +56,11 @@
 	        <span>iOS developer</span>
 	        <!-- apple ico will be added by css ::before -->
 	        <meter value=2 min=0 max=100>
-	            12,0
+	            13,0
 	        </meter>
 	        <span>карма</span>
 	        <meter value=0 min=0 max=100>
-	            4,1
+	            13,7
 	        </meter>
 	        <span>рейтинг</span>
 	    </section>
@@ -98,79 +98,194 @@
         </section>
     </header>
 
-	<picture>
-		<source srcset="#">
-        <img src="#" alt="avatar">
-	</picture>
+	
+    <img src="#" alt="Xcode work screen">
+	
+
+	<p>Этот пост является вольным переводом статьи <cite><a target="_blank" rel="original article" hreflang="en" href="#">Xcode: A Better Way to Deal with Storyboards</a></cite> by <a target="_blank" rel="author" hreflang="en" href="">Stan Ostrovskiy</a></p>
+	<p>Некоторые примеры кода в оригинальной статье устарели (ввиду выхода Swift 3) и в переводе были изменены.</p>
+	<p>Советы и рекомендации по работе с Interface Builder.</p>
+
+	<p>Apple серьезно улучшили Interface Builder в новом Xcode 8. Использование size classes стало более интуитивным, возможность масштабирования сториборда — очень удобной, а полное превью прям в Interface Builder — просто великолепным. Для тех у кого были сомнения насчет использования Interface Builder, это может стать хорошими плюсами.</p>
+
+	<p>С другой стороны, у многих разработчиков все еще есть некоторые проблемы с Interface Builder когда они создают большие многоэкранные приложения со сложной навигацией.</p>
+
+	<p>В этой статье я поделюсь некоторыми из лучших практик для работы со сторибордами в вашем проекте. Вы уже пользуетесь Interface Builder, или только делаете первые шаги в этом направлении? — в любом случае, эти советы будут полезны для вас.</p>
+
+	<section>
+		<h2>1. Если вы работаете в команде, используйте отдельный сториборд для каждого экрана. Даже если вы работаете один — это наверняка станет хорошей привычкой.</h2>
+		<p>В вашем проекте есть один файл main.storyboard, который выглядит вот так?</p>
+		<figure>
+			<img src="#" >
+			<figcaption>С точки зрения дизайнера, все хорошо: полностью видно UI и навигацию. И это именно то, для чего Interface Builder и был создан.</figcaption>
+		</figure>
+	</section>
+
+	<!--Many more sectios -->
+
+	<section>
+		<h2>От переводчика:</h2>
+		<p>Благодаря методу описанному в этой статье, я очень сильно упростил работу со сторибордами в своем текущем проекте. Пока я работал над ним один — все было прекрасно, но как только появились другие разработчики — работа со сторибордом превратилась в настоящий ад. От отчаянья мы практически перешли к "банановому методу" (можно почитать <a href="#">здесь</a> в разделе "Pass the banana").</p>
+
+		<p>Конечно же, в идеале нужно будет рано или поздно прийти к <a target="_blank" href="#" lang="en">VIPER</a>. Но об этом будет уже другой пост.</p>
+		<ul>
+			<li><a href="#">xcode</a></li>
+			<li><a href="#">swift</a></li>
+			<li><a href="#">storyboard</a></li>
+		</ul>
+	</section>
 
 
+	<footer>
+		<section>
+			<form action="#">
+		        <button>up vote</button>
+		        <input type=text value=5>
+		        <button>down vote</button>
+		    </form>
+		    <ul>
+		        <li>2.7k</li>
+		        <li>
+		            <form action="#">
+		                <button>add to favorite</button>
+		            </form>
+		            <span>48</span>
+		        </li>
+		    </ul>
+		    <ul>
+		        <li><a href="#" target=_blank>vk.com</a>
+		        <li><a href="#" target=_blank>fb.com</a>
+		        <li><a href="#" target=_blank>twitter.com</a>
+		        <li><a href="#" target=_blank>getpocket.com</a>
+		    </ul>
+		</section>
+		<section>
+		    <picture>
+		        <source srcset="#">
+		        <img src="#" alt="avatar">
+		    </picture>
+		    <a href="#" target="_blank"><h1>Serge Sukhanov</h1></a>
+		    <a href="#" target="_blank">@s_suhanov</a>
+		    <span>iOS developer</span>
+		    <!-- apple ico will be added by css ::before -->
+		    <meter value=2 min=0 max=100>
+		        13,0
+		    </meter>
+		    <span>карма</span>
+		    <meter value=0 min=0 max=100>
+		        13,7
+		    </meter>
+		    <span>рейтинг</span>
+		    <ul>
+		    	<li><a target="_blank" rel="post author's site" href="#">Сайт</a></li>
+		    	<li><a target="_blank" rel="post author's facebook page"href="#">Facebook</a></li>
+		    	<li><a target="_blank" rel="post author's GitHub page" href="#">GitHub</a></li>
+		    </ul>
+		</section>
+	</footer>
 
+	<aside>
+		<!--GetSale ad-->
+	</aside>
 
+	<aside>
+		<h2>Самое читаемое</h2>
+		<a href="#">Разработка</a>
+		<ul>
+			<li><a href="#">Сейчас</a></li>
+			<li><a href="#">Сутки</a></li>
+			<li><a href="#">Неделя</a></li>
+			<li><a href="#">Месяц</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Как программист машину покупал. Часть II</a> <span>+21</span><span>8k</span><span>47</span><span>24</span></li>
+			<li><a href="#">Как программист машину покупал. Часть II</a> <span>+21</span><span>8k</span><span>47</span><span>24</span></li>
+			<li><a href="#">Как программист машину покупал. Часть II</a> <span>+21</span><span>8k</span><span>47</span><span>24</span></li>
+			<li><a href="#">Как программист машину покупал. Часть II</a> <span>+21</span><span>8k</span><span>47</span><span>24</span></li>
+			<li><a href="#">Как программист машину покупал. Часть II</a> <span>+21</span><span>8k</span><span>47</span><span>24</span></li>
+		</ul>
+	</aside>
 
-
-
-
+	<section>
+		<h2>Комментарии (15)</h2>
+		<article>
+			<header>
+				<img src="#" alt="avatar">
+				<h2><a href="#">Bimava</a></h2>
+				<time datetime="2016-10-17T09:28">17 октября 2016 в 09:28</time>
+				<span>+1</span>
+				<form action="#">
+			        <button>up vote</button>
+			        <input type=text value=5>
+			        <button>down vote</button>
+			    </form>
+			</header>
+			<p>До сих пор для нас лучший способ не работать со storyboards… Пост красивый спасибо!</p>
+		</article>
+	</section>
 
 </article>
 
 </main>
 
 
+<aside>
 
-<aside>
-	<!--Code school ad-->
-</aside>
+	<aside>
+		<!--Code school ad-->
+	</aside>
 
-<aside>
-	<h2>Хабы</h2>
-	<ul>
-		<li><a href="#">Программирование</a></li>
-        <li><a href="#">Разработка веб-сайтов</a></li>
-        <li><a href="#">Машинное обучение</a></li>
-        <li><a href="#">Рахработка под iOS</a></li>
-        <li><a lang="en" href="#">JavaScript</a></li>
-        <li><a lang="en" href="#">Xcode</a></li>
-        <li><a lang="en" href="#">Ruby on Rails</a></li>
-        <li><a lang="en" href="#">Microsoft SQL Server</a></li>
-        <li><a href="#">Алгоритмы</a></li>
-        <li><a lang="en" href="#">R</a></li>
-	</ul>
-	<a href="#">Все хабы</a>
-</aside>
+	<aside>
+		<h2>Хабы</h2>
+		<ul>
+			<li><a href="#">Программирование</a></li>
+	        <li><a href="#">Разработка веб-сайтов</a></li>
+	        <li><a href="#">Машинное обучение</a></li>
+	        <li><a href="#">Рахработка под iOS</a></li>
+	        <li><a lang="en" href="#">JavaScript</a></li>
+	        <li><a lang="en" href="#">Xcode</a></li>
+	        <li><a lang="en" href="#">Ruby on Rails</a></li>
+	        <li><a lang="en" href="#">Microsoft SQL Server</a></li>
+	        <li><a href="#">Алгоритмы</a></li>
+	        <li><a lang="en" href="#">R</a></li>
+		</ul>
+		<a href="#">Все хабы</a>
+	</aside>
 
-<aside>
-	<!--Yandex ad-->
-</aside>
-<aside>
-	<!--Yandex ad-->
-</aside>
+	<aside>
+		<!--Yandex ad-->
+	</aside>
+	<aside>
+		<!--Yandex ad-->
+	</aside>
 
-<aside>
-	<h1>Похожие публикации</h1>
-    <ul>
-        <li><a href="#">AppCode 2016.2: новые рефакторинги и инспекции, live templates, улучшения автодополнения кода, и все это — про Swift</a><a href="#">14</a></li>
-        <li><a href="#">Как отметить свои TODO, FIXME и ERROR в Xcode</a><a href="#">7</a></li>
-        <li><a href="#">Swift Features</a><a href="#">15</a></li>
-        <li><a href="#">Swift и время компиляции</a><a href="#">56</a></li>
-        <li><a href="#">SМагия IBDesignable или расширяем функциональность Interface Builder в Xcode</a><a href="#">8</a></li>
-    </ul>
-</aside>
+	<aside>
+		<h1>Похожие публикации</h1>
+	    <ul>
+	        <li><a href="#">AppCode 2016.2: новые рефакторинги и инспекции, live templates, улучшения автодополнения кода, и все это — про Swift</a><a href="#">14</a></li>
+	        <li><a href="#">Как отметить свои TODO, FIXME и ERROR в Xcode</a><a href="#">7</a></li>
+	        <li><a href="#">Swift Features</a><a href="#">15</a></li>
+	        <li><a href="#">Swift и время компиляции</a><a href="#">56</a></li>
+	        <li><a href="#">SМагия IBDesignable или расширяем функциональность Interface Builder в Xcode</a><a href="#">8</a></li>
+	    </ul>
+	</aside>
 
-<aside>
-	<h1>Что обсуждают</h1>
-	<ul>
-		<li><a href="#">Сейчас</a></li>
-		<li><a href="#">Вчера</a></li>
-		<li><a href="#">Неделя</a></li>
-		<li><a href="#">Месяц</a></li>
-	</ul>
-    <ul>
-        <li><a href="#">Задачка на std::multiset или поиск по полям структуры</a><a href="#">6</a></li>
-        <li><a href="#">Создание архитектуры программы или как проектировать табуретку</a><a href="#">39</a></li>
-        <li><a href="#">Громкая история браузера Opera</a><a href="#">9</a></li>
-        <li><a href="#">Netstat, где мои дейтаграммы?</a><a href="#">7</a></li>
-        <li><a href="#">Лемматизация в Excel, или «Робот-распознаватель 3.0»</a><a href="#">16</a></li>
-    </ul>
+	<aside>
+		<h1>Что обсуждают</h1>
+		<ul>
+			<li><a href="#">Сейчас</a></li>
+			<li><a href="#">Вчера</a></li>
+			<li><a href="#">Неделя</a></li>
+			<li><a href="#">Месяц</a></li>
+		</ul>
+	    <ul>
+	        <li><a href="#">Задачка на std::multiset или поиск по полям структуры</a><a href="#">6</a></li>
+	        <li><a href="#">Создание архитектуры программы или как проектировать табуретку</a><a href="#">39</a></li>
+	        <li><a href="#">Громкая история браузера Opera</a><a href="#">9</a></li>
+	        <li><a href="#">Netstat, где мои дейтаграммы?</a><a href="#">7</a></li>
+	        <li><a href="#">Лемматизация в Excel, или «Робот-распознаватель 3.0»</a><a href="#">16</a></li>
+	    </ul>
+	</aside>
 </aside>
 
 <aside>
